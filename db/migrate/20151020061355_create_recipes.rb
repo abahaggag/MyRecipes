@@ -4,6 +4,7 @@ class CreateRecipes < ActiveRecord::Migration
       t.string :name
       t.text :summary
       t.text :description
+      t.references :chef
       t.timestamps
     end
   end
